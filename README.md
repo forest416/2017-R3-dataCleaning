@@ -2,10 +2,20 @@
 
 ## prepare
 
-Copy the R program file run_analysis.R to the same directory as file features file
+* Unzip Samsung data under current work directory.
+Directory structure in current work directory:
+
++---UCI HAR Dataset
+    +---test
+    ¦   +---Inertial Signals
+    +---train
+        +---Inertial Signals
+
+* Copy the R program file run_analysis.R to the same directory as file features file
+
 
 ## File read in process
-features
+features
 activity_labels
 train/subject_train
 train/X_train
