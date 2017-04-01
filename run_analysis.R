@@ -77,4 +77,7 @@ dat.subset$label=NULL
 ## step4, varialbe names, done
 ## step5
 result<-dcast(melt(dat.subset, id=c('activity', 'subject')), activity+subject ~ variable, mean)
+# write result to file
+write.table(result, file='step5.txt', row.name=F, sep=',', quote=T)
+
 
